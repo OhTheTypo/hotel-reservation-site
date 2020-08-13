@@ -3,10 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"> 
     <title>Hotel Reservation</title>
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">
+            <p>Hotel Paradise</p>
+        </div>
+        <div class="menu-button">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="menu">
+            <a>Reservation</a>
+            <a>About Us</a>
+            <a>Rooms</a>
+            <a>Contact</a>
+        </div>
+    </nav>
+    <header>
+        <div class="reservation">
+            <h1 class="title">Reserve Room</h1>
+            <form>
+                <input class="date" type="text" name="check-in" placeholder="Check In">
+                <input class="date" type="text" name="check-out" placeholder="Check Out"><br>
+                <select name="adults">
+                    <option selected disabled>Adults</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <select name="children">
+                    <option selected disabled>Children</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <select name="rooms">
+                    <option selected disabled>Select Room</option>
+                    <option>Single Room</option>
+                    <option>Double Room</option>
+                    <option>Deluxe Room</option>
+                </select>
+                <select name="provision">
+                    <option selected disabled>Select Provision</option>
+                    <option>-</option>
+                    <option>Breakfast</option>
+                    <option>Half Board</option>
+                    <option>All Inclusive</option>
+                </select>
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="E-mail"><br>
+                <input type="tel" name="phone" placeholder="Phone Number"><br>
+                <input type="submit" value="Submit" class="reserve-button">
+            </form>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="images">
+            images
+        </div>
+        <div class="intro-text">
+            <h1 class="title">About the Hotel</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Accusantium, distinctio. Iure optio labore praesentium 
+                 aperiam rem, aut laudantium quis similique possimus 
+                 cupiditate! Amet est debitis nobis doloremque beatae, 
+                 fugit, iusto nisi id, earum deleniti explicabo alias? 
+                 Soluta, earum laboriosam! Animi repudiandae autem inventore
+                 illum soluta saepe veritatis ratione necessitatibus recusandae.</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Qui deleniti ea ex saepe quibusdam hic dolorem veniam.
+                Tenetur et, illum blanditiis, aperiam, magnam perferendis
+                sunt tempora voluptates aliquid nesciunt rem!</p>
+        </div>
+    </div>
+    <div class="rooms">
+        <section class="room-section">
+            <img src="assets/single_room.jpg">
+            <div class="room-info">
+                <h2>Singe Room</h2>
+                <p class="price">$100</p>
+                <p class="size">15 m<sup>2</sup></p>
+                <div class="features">
+                    <abbr title="Shower"><i class="fa fa-shower"></i></abbr>
+                    <abbr title="Wi-Fi"><i class="fa fa-wifi"></i></abbr>
+                    <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+                    <abbr title="TV"><i class="fa fa-tv"></i></abbr>
+                </div>
+                <button class="reserve-button">Reserve Room</button>
+            </div>
+        </section>
+        <section class="room-section">
+            <img src="assets/double_room.jpg">
+            <div class="room-info">
+                <h2>Double Room</h2>
+                <p class="price">$150</p>
+                <p class="size">25 m<sup>2</sup></p>
+                <div class="features">
+                    <abbr title="Bath"><i class="fa fa-bath"></i></abbr>
+                    <abbr title="Wi-Fi"><i class="fa fa-wifi"></i></abbr>
+                    <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+                    <abbr title="TV"><i class="fa fa-tv"></i></abbr>
+                </div>
+                <button class="reserve-button">Reserve Room</button>
+            </div>
+        </section>
+        <section class="room-section">
+            <img src="assets/deluxe_room.jpg">
+            <div class="room-info">
+                <h2>Deluxe Room</h2>
+                <p class="price">$200</p>
+                <p class="size">40 m<sup>2</sup></p>
+                <div class="features">
+                    <abbr title="Bath"><i class="fa fa-bath"></i></abbr>
+                    <abbr title="Wi-Fi"><i class="fa fa-wifi"></i></abbr>
+                    <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+                    <abbr title="TV"><i class="fa fa-tv"></i></abbr>
+                    <abbr title="Pets Allowed"><i class="fa fa-paw"></i></abbr>
+                    <abbr title="Minibar"><i class="fa fa-glass"></i></abbr> 
+                </div>
+                <button class="reserve-button">Reserve Room</button>
+            </div>
+        </section>
+    </div>
+    <div class="contact">
+        <h2>Got any questions? Feel free to contact us:</h2><br>
+        <li><i class="fa fa-map-marker"></i>Dubai, UAE</li>
+        <li><i class="fa fa-phone"> </i>+00 10 10 10</li>
+        <li><i class="fa fa-envelope"></i>hotel@email.com</li>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Message">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <h2>Find us on</h2>
+        <div class="links">
+            <a href=""><i class="fa fa-facebook-official"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin-square"></i></a>
+            <a href=""><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <small>Back to top</small>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
