@@ -17,19 +17,19 @@
             <i class="fa fa-bars"></i>
         </div>
         <div class="menu">
-            <a>Reservation</a>
-            <a>About Us</a>
-            <a>Rooms</a>
-            <a>Contact</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#intro">About Us</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
     <header>
-        <div class="reservation">
+        <div class="reservation" id="reservation">
             <h1 class="title">Reserve Room</h1>
-            <form>
-                <input class="date" type="text" name="check-in" placeholder="Check In">
-                <input class="date" type="text" name="check-out" placeholder="Check Out"><br>
-                <select name="adults">
+            <form id="reservation-form">
+                <input class="date" type="text" name="check-in" placeholder="Check In" required>
+                <input class="date" type="text" name="check-out" placeholder="Check Out" required><br>
+                <select name="adults" required>
                     <option selected disabled>Adults</option>
                     <option>0</option>
                     <option>1</option>
@@ -37,7 +37,7 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <select name="children">
+                <select name="children" required>
                     <option selected disabled>Children</option>
                     <option>0</option>
                     <option>1</option>
@@ -45,46 +45,27 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <select name="rooms">
+                <select name="rooms" required>
                     <option selected disabled>Select Room</option>
                     <option>Single Room</option>
                     <option>Double Room</option>
                     <option>Deluxe Room</option>
                 </select>
-                <select name="provision">
+                <select name="provision" required>
                     <option selected disabled>Select Provision</option>
                     <option>-</option>
                     <option>Breakfast</option>
                     <option>Half Board</option>
                     <option>All Inclusive</option>
                 </select>
-                <input type="text" name="name" placeholder="Name"><br>
-                <input type="email" name="email" placeholder="E-mail"><br>
-                <input type="tel" name="phone" placeholder="Phone Number"><br>
-                <input type="submit" value="Submit" class="reserve-button">
+                <input type="text" name="name" placeholder="Name" required><br>
+                <input type="email" name="email" placeholder="E-mail" required><br>
+                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <input type="submit" value="Submit" class="reserve-button" required>
             </form>
         </div>
     </header>
-    <div class="intro">
-        <div class="images">
-            images
-        </div>
-        <div class="intro-text">
-            <h1 class="title">About the Hotel</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                 Accusantium, distinctio. Iure optio labore praesentium 
-                 aperiam rem, aut laudantium quis similique possimus 
-                 cupiditate! Amet est debitis nobis doloremque beatae, 
-                 fugit, iusto nisi id, earum deleniti explicabo alias? 
-                 Soluta, earum laboriosam! Animi repudiandae autem inventore
-                 illum soluta saepe veritatis ratione necessitatibus recusandae.</p><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Qui deleniti ea ex saepe quibusdam hic dolorem veniam.
-                Tenetur et, illum blanditiis, aperiam, magnam perferendis
-                sunt tempora voluptates aliquid nesciunt rem!</p>
-        </div>
-    </div>
-    <div class="rooms">
+    <div class="rooms" id="rooms">
         <section class="room-section">
             <img src="assets/single_room.jpg">
             <div class="room-info">
@@ -133,28 +114,47 @@
             </div>
         </section>
     </div>
-    <div class="contact">
+    <div class="intro" id="intro">
+        <div class="intro-text">
+            <h1>About the Hotel</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium, distinctio. Iure optio labore praesentium 
+                aperiam rem, aut laudantium quis similique possimus 
+                cupiditate! Amet est debitis nobis doloremque beatae, 
+                fugit, iusto nisi id, earum deleniti explicabo alias? 
+                Soluta, earum laboriosam! Animi repudiandae autem inventore
+                illum soluta saepe veritatis ratione necessitatibus recusandae.</p>
+                <br>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae rem cupiditate tempora neque. Aliquam voluptas rerum
+                    sit quisquam totam ipsum amet quod excepturi saepe. Quam 
+                    similique at accusamus corrupti nihil aperiam tempora odit
+                    asperiores recusandae, nam aliquam fugiat deserunt perferendis?</p>
+        </div>
+        <img src="assets/hotel_small.jpg" alt="hotel">
+    </div>
+    <div class="contact" id="contact">
         <h2>Got any questions? Feel free to contact us:</h2><br>
         <li><i class="fa fa-map-marker"></i>Dubai, UAE</li>
         <li><i class="fa fa-phone"> </i>+00 10 10 10</li>
         <li><i class="fa fa-envelope"></i>hotel@email.com</li>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Message">
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Message" required>
             <input type="submit" value="Submit">
         </form>
     </div>
     <footer>
         <h2>Find us on</h2>
         <div class="links">
-            <a href=""><i class="fa fa-facebook-official"></i></a>
-            <a href=""><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-linkedin-square"></i></a>
-            <a href=""><i class="fa fa-youtube-play"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i></a>
         </div>
-        <small>Back to top</small>
+        <p id="back-to-top">Back to top</p>
     </footer>
     <script src="index.js"></script>
 </body>

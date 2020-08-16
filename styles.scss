@@ -1,0 +1,310 @@
+$orange: #ff8f00;
+$orange_highlight: #ffc374;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+/* menu */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 20px;
+    background: #fff;
+}
+
+a {
+    cursor: pointer;
+    &:link, &:active, &:visited {
+        text-decoration: none;
+        color: #000;
+    }
+    &:hover {
+        color: $orange;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-button {
+    display: none;
+}
+
+a {
+    margin: 0 25px;
+}
+
+/* header */
+
+header {
+    background-image: url('assets/hotel.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.reservation {
+    width: 375px;
+    background: rgba(0, 0, 0, 0.36);
+    position: relative;
+    left: 10%;
+}
+
+.title {
+    background: $orange;
+    padding: 10px;
+}
+
+#reservation-form {
+    padding: 15px;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.reserve-button {
+    background: $orange;
+    border: none;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    &:hover {
+        background: $orange_highlight;
+    }
+}
+
+.date {
+    width: 49%;
+}
+
+select {
+    width: 49%;
+}
+
+/*  rooms  */
+
+.rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.room-section {
+    width: 33%;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #c6c6c6;
+    img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.room-info {
+    padding: 10px;
+    margin-top: -5px;
+    border: 1px solid #eaeaea;
+    border-top: none;
+    .reserve-button {
+        margin-top: 20px;
+    }
+}
+
+.price {
+    font-size: 20px;
+    color: #959595;
+}
+
+h2, .price, .size, .features {
+    margin-top: 10px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+/* intro */
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 20px 0;
+}
+
+.intro-text, img {
+    width: 48%;
+}
+
+img {
+    object-fit: cover;
+}
+
+.intro-text p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*  contact */
+
+.contact {
+    margin-top: 40px;
+    padding: 15px;
+}
+
+li {
+    list-style-type: none;
+    .fa {
+        margin-right: 15px;
+        color: $orange;
+    }
+}
+
+#contact-form {
+    margin-top: 20px;
+}
+
+#contact-form input[type=submit] {
+    color: #000;
+    background: $orange;
+    border: none;
+    cursor: pointer;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    &:hover {
+        background: $orange_highlight;
+    } 
+}
+
+/*  footer  */
+
+footer {
+    height: 150px;
+    width: 100%;
+    background: #000;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        margin-top: 20px;
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    a {
+        margin: 25px 5px;
+        &:link, &:active, &:visited {
+            color: #fff;
+        }
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+#back-to-top {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        color: $orange;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .date, select {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+  
+    nav, .menu {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: auto;
+        display: none;
+    }
+
+    .visible {
+        display: initial;
+        display: flex;
+    }
+
+    .menu-button {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    a {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text, img {
+        width: 100%;
+    }
+
+    .intro img {
+        margin-top: 20px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .reservation {
+        left: 0;
+        margin: auto;
+    }
+
+    .rooms {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .room-section {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
