@@ -28,9 +28,9 @@
         <div class="reservation" id="reservation">
             <h1 class="title">Reserve Room</h1>
             <form id="reservation-form">
-                <input class="date" type="text" name="check-in" placeholder="Check In" required>
-                <input class="date" type="text" name="check-out" placeholder="Check Out" required><br>
-                <select name="adults" required>
+                <input class="date" type="text" placeholder="Check In" required>
+                <input class="date" type="text" placeholder="Check Out" required><br>
+                <select required>
                     <option selected disabled>Adults</option>
                     <option>0</option>
                     <option>1</option>
@@ -38,7 +38,7 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <select name="children" required>
+                <select required>
                     <option selected disabled>Children</option>
                     <option>0</option>
                     <option>1</option>
@@ -46,29 +46,29 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <select name="rooms" required>
+                <select required>
                     <option selected disabled>Select Room</option>
                     <option>Single Room</option>
                     <option>Double Room</option>
                     <option>Deluxe Room</option>
                 </select>
-                <select name="provision" required>
+                <select required>
                     <option selected disabled>Select Provision</option>
                     <option>-</option>
                     <option>Breakfast</option>
                     <option>Half Board</option>
                     <option>All Inclusive</option>
                 </select>
-                <input type="text" name="name" placeholder="Name" required><br>
-                <input type="email" name="email" placeholder="E-mail" required><br>
-                <input type="tel" name="phone" placeholder="Phone Number" required><br>
+                <input type="text" placeholder="Name" required><br>
+                <input type="email" placeholder="E-mail" required><br>
+                <input type="tel" placeholder="Phone Number" required><br>
                 <input type="submit" value="Submit" class="reserve-button" required>
             </form>
         </div>
     </header>
     <div class="rooms" id="rooms">
         <section class="room-section">
-            <img src="assets/single_room.jpg">
+            <img src="assets/single_room.jpg" alt="single room">
             <div class="room-info">
                 <h2>Singe Room</h2>
                 <p class="price">$100</p>
@@ -83,7 +83,7 @@
             </div>
         </section>
         <section class="room-section">
-            <img src="assets/double_room.jpg">
+            <img src="assets/double_room.jpg" alt="double room">
             <div class="room-info">
                 <h2>Double Room</h2>
                 <p class="price">$150</p>
@@ -98,7 +98,7 @@
             </div>
         </section>
         <section class="room-section">
-            <img src="assets/deluxe_room.jpg">
+            <img src="assets/deluxe_room.jpg" alt="deluxe room">
             <div class="room-info">
                 <h2>Deluxe Room</h2>
                 <p class="price">$200</p>
@@ -124,13 +124,14 @@
                 cupiditate! Amet est debitis nobis doloremque beatae, 
                 fugit, iusto nisi id, earum deleniti explicabo alias? 
                 Soluta, earum laboriosam! Animi repudiandae autem inventore
-                illum soluta saepe veritatis ratione necessitatibus recusandae.</p>
-                <br>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quae rem cupiditate tempora neque. Aliquam voluptas rerum
-                    sit quisquam totam ipsum amet quod excepturi saepe. Quam 
-                    similique at accusamus corrupti nihil aperiam tempora odit
-                    asperiores recusandae, nam aliquam fugiat deserunt perferendis?</p>
+                illum soluta saepe veritatis ratione necessitatibus recusandae.
+            </p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quae rem cupiditate tempora neque. Aliquam voluptas rerum
+                sit quisquam totam ipsum amet quod excepturi saepe. Quam 
+                similique at accusamus corrupti nihil aperiam tempora odit
+                asperiores recusandae, nam aliquam fugiat deserunt perferendis?
+            </p>
         </div>
         <img src="assets/hotel_small.jpg" alt="hotel">
     </div>

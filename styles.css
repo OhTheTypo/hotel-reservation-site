@@ -112,11 +112,7 @@ input, select {
   background: #ffc374;
 }
 
-.date {
-  width: 49%;
-}
-
-select {
+.date, select {
   width: 49%;
 }
 
@@ -239,20 +235,19 @@ footer {
   background: #000;
   margin-top: 20px;
   color: #fff;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer h1 {
@@ -297,6 +292,24 @@ footer h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro-text, img {
+    width: 100%;
+  }
+  .intro img {
+    margin-top: 20px;
+  }
+  #contact-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   nav {
     position: -webkit-sticky;
     position: sticky;
@@ -329,24 +342,6 @@ footer h1 {
     margin: 10px;
     text-align: center;
   }
-  .intro {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .intro-text, img {
-    width: 100%;
-  }
-  .intro img {
-    margin-top: 20px;
-  }
-  #contact-form {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .reservation {
     left: 0;
     margin: auto;

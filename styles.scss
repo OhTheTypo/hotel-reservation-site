@@ -97,11 +97,7 @@ input, select {
     }
 }
 
-.date {
-    width: 49%;
-}
-
-select {
+.date, select {
     width: 49%;
 }
 
@@ -208,11 +204,10 @@ footer {
     background: #000;
     margin-top: 20px;
     color: #fff;
-    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1 {
         margin-top: 20px;
     }
@@ -247,6 +242,24 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text, img {
+        width: 100%;
+    }
+
+    .intro img {
+        margin-top: 20px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     nav {
         position: sticky;
         top: 0;
@@ -280,24 +293,6 @@ footer {
         text-align: center;
     }
 
-    .intro {
-        flex-direction: column;
-    }
-
-    .intro-text, img {
-        width: 100%;
-    }
-
-    .intro img {
-        margin-top: 20px;
-    }
-
-    #contact-form {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
     .reservation {
         left: 0;
         margin: auto;
