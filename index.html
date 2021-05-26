@@ -28,9 +28,9 @@
         <div class="reservation" id="reservation">
             <h1 class="title">Reserve Room</h1>
             <form id="reservation-form">
-                <input class="date" type="text" placeholder="Check In" required>
-                <input class="date" type="text" placeholder="Check Out" required><br>
-                <select required>
+                <input class="date" id="input-arrival" type="text" placeholder="Check In" required>
+                <input class="date" id="input-departure" type="text" placeholder="Check Out" required><br>
+                <select id="input-adults" required>
                     <option selected disabled>Adults</option>
                     <option>0</option>
                     <option>1</option>
@@ -38,7 +38,7 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <select required>
+                <select id="input-children" required>
                     <option selected disabled>Children</option>
                     <option>0</option>
                     <option>1</option>
@@ -46,13 +46,13 @@
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <select required>
+                <select id="input-room" required>
                     <option selected disabled>Select Room</option>
                     <option>Single Room</option>
                     <option>Double Room</option>
                     <option>Deluxe Room</option>
                 </select>
-                <select required>
+                <select id="input-provision" required>
                     <option selected disabled>Select Provision</option>
                     <option>-</option>
                     <option>Breakfast</option>

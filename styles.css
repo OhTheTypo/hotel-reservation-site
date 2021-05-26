@@ -5,8 +5,14 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: 'Abel', sans-serif;
+  max-width: 136em;
+  margin: auto;
 }
 
 /* menu */
@@ -18,17 +24,21 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 20px;
+  padding: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
   background: #fff;
+  width: 100%;
 }
 
 .logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 a {
@@ -59,7 +69,7 @@ a:hover {
 }
 
 a {
-  margin: 0 25px;
+  margin-right: 2em;
 }
 
 /* header */
@@ -67,17 +77,18 @@ header {
   background-image: url("assets/hotel.jpg");
   background-position: 50% 50%;
   background-size: cover;
-  height: 700px;
+  height: 55em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .reservation {
-  width: 375px;
+  width: 27em;
   background: rgba(0, 0, 0, 0.36);
   position: relative;
   left: 10%;
@@ -85,17 +96,25 @@ header {
 
 .title {
   background: #ff8f00;
-  padding: 10px;
+  padding: 0.3em 0.5em;
 }
 
 #reservation-form {
-  padding: 15px;
+  padding: 1em;
 }
 
 input, select {
-  margin: 10px 0;
-  padding: 10px;
+  margin: 0.7em 0;
+  padding: 0.75em;
   width: 100%;
+}
+
+#input-arrival, #input-adults, #input-room {
+  width: 49%;
+}
+
+#input-departure, #input-children, #input-provision {
+  width: 50%;
 }
 
 .reserve-button {
@@ -103,17 +122,13 @@ input, select {
   border: none;
   cursor: pointer;
   font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-size: 1.4rem;
   width: 100%;
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .reserve-button:hover {
   background: #ffc374;
-}
-
-.date, select {
-  width: 49%;
 }
 
 /*  rooms  */
@@ -121,50 +136,47 @@ input, select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1.5em;
+  width: 100%;
 }
 
 .room-section {
   width: 33%;
-  margin: 20px;
-  -webkit-box-shadow: 5px 5px 5px #c6c6c6;
-          box-shadow: 5px 5px 5px #c6c6c6;
+  margin: 0 1.2em;
+  -webkit-box-shadow: 0.3em 0.3em 0.3em #c6c6c6;
+          box-shadow: 0.3em 0.3em 0.3em #c6c6c6;
 }
 
 .room-section img {
   width: 100%;
-  height: 250px;
+  height: 18em;
 }
 
 .room-info {
-  padding: 10px;
-  margin-top: -5px;
-  border: 1px solid #eaeaea;
+  padding: 0.7em;
+  margin-top: -0.35em;
+  border: 0.07em solid #eaeaea;
   border-top: none;
 }
 
 .room-info .reserve-button {
-  margin-top: 20px;
+  margin-top: 1.4em;
 }
 
 .price {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #959595;
 }
 
 h2, .price, .size, .features {
-  margin-top: 10px;
+  margin-top: 0.7em;
 }
 
 .fa {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 /* intro */
@@ -179,11 +191,13 @@ h2, .price, .size, .features {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 20px 0;
+  margin: 3em 0;
+  padding: 0 1.2em;
+  width: 100%;
 }
 
 .intro-text, img {
-  width: 48%;
+  width: 49%;
 }
 
 img {
@@ -192,14 +206,15 @@ img {
 }
 
 .intro-text p {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-top: 0.7rem;
 }
 
 /*  contact */
 .contact {
-  margin-top: 40px;
-  padding: 15px;
+  margin-top: 2em;
+  padding: 0 1.2em;
+  width: 100%;
 }
 
 li {
@@ -207,12 +222,12 @@ li {
 }
 
 li .fa {
-  margin-right: 15px;
+  margin-right: 1em;
   color: #ff8f00;
 }
 
 #contact-form {
-  margin-top: 20px;
+  margin-top: 1.5em;
 }
 
 #contact-form input[type=submit] {
@@ -221,7 +236,7 @@ li .fa {
   border: none;
   cursor: pointer;
   font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 #contact-form input[type=submit]:hover {
@@ -230,10 +245,11 @@ li .fa {
 
 /*  footer  */
 footer {
-  height: 150px;
+  height: 10em;
   width: 100%;
+  max-width: 136em;
   background: #000;
-  margin-top: 20px;
+  margin-top: 2em;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +267,7 @@ footer {
 }
 
 footer h1 {
-  margin-top: 20px;
+  margin-top: 2em;
 }
 
 .links {
@@ -265,7 +281,7 @@ footer h1 {
 }
 
 .links a {
-  margin: 25px 5px;
+  margin: 1.7em 0.4em;
 }
 
 .links a:link, .links a:active, .links a:visited {
@@ -285,30 +301,6 @@ footer h1 {
   color: #ff8f00;
 }
 
-@media only screen and (max-width: 350px) {
-  .date, select {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .intro {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .intro-text, img {
-    width: 100%;
-  }
-  .intro img {
-    margin-top: 20px;
-  }
-  #contact-form {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   nav {
     position: -webkit-sticky;
@@ -325,6 +317,10 @@ footer h1 {
   .menu {
     margin: auto;
     display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 3em;
   }
   .visible {
     display: initial;
@@ -334,6 +330,8 @@ footer h1 {
   }
   .menu-button {
     display: initial;
+    width: 100%;
+    text-align: left;
   }
   .logo {
     display: none;
@@ -357,6 +355,26 @@ footer h1 {
   .room-section {
     width: 80%;
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .room-section {
+    width: 95%;
+  }
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .intro img {
+    margin-top: 2em;
+  }
+  .intro-text, img {
+    width: 95%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
